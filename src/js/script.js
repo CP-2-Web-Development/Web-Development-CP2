@@ -1,14 +1,19 @@
 //FUNÇÃO TROCAR
-  const btnModo = document.getElementById("modoBtn");
+function trocar(modo) {
+  if (modo === 'escuro') {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('modo', 'escuro');
+  } else {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('modo', 'claro');
+  }
+}
 
-  btnModo.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    // Troca o texto e o ícone do botão
-    if (document.body.classList.contains("dark-mode")) {
-      btnModo.textContent = "☀️ Modo Light";
-    } else {
-      btnModo.textContent = "🌙 Modo Dark";
-    }
-  });
+// Ao carregar a página, aplica o tema salvo
+window.onload = function () {
+  const temaSalvo = localStorage.getItem('modo');
+  if (temaSalvo === 'escuro') {
+    document.body.classList.add('dark-mode');
+  }
+};
 
