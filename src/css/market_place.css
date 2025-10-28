@@ -1,1 +1,59 @@
 @import url('../css/style.css');
+
+#cursos {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #0d1b2a;
+}
+
+.titulo-secao {
+  color: #00bfff;
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #00bfff;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #1b263b;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  color: #fff;
+  box-shadow: 0 0 10px #00bfff44;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #00bfff;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.card .preco {
+  font-weight: bold;
+  color: #00ffb3;
+  font-size: 1.1em;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00bfffaa;
+}
