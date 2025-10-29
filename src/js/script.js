@@ -9,7 +9,6 @@ function trocar(modo) {
   }
 }
 
-// Ao carregar a página, aplica o tema salvo
 window.onload = function () {
   const temaSalvo = localStorage.getItem('modo');
   if (temaSalvo === 'escuro') {
