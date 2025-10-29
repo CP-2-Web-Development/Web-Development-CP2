@@ -126,8 +126,18 @@ footer {
   font-size: 14px;
   color: #aaa;
 }
-
-
+.high-contrast-mode {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+.high-contrast-mode * {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: #ffff00 !important;
+}
+.high-contrast-mode a {
+  color: #00ffff !important;
+}
 .dark-mode {
   background-color: #0a192f;
   color: #e0e0e0;
