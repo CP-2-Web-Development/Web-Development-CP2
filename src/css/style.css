@@ -1,1 +1,170 @@
+<<<<<<< HEAD
 /* Estilos gerais para o corpo da página */
+=======
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4; 
+  color: #111;
+  transition: 0.4s;
+}
+
+main {
+  flex: 1; 
+}
+
+header {
+  background-color: #ffffff;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+header h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #007bff;
+}
+
+.modo-tema {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cor {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cor:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #00bfff;
+}
+
+footer {
+  background-color: #112240;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+  transition: 0.4s;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.social-icons a {
+  color: #00bfff;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+.social-icons a i {
+  margin-right: 6px;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid #00bfff;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.dark-mode {
+  background-color: #0a192f;
+  color: #e0e0e0;
+}
+
+.dark-mode header {
+  background-color: #112240;
+  color: #e0e0e0;
+}
+
+.dark-mode header nav ul li a {
+  color: #e0e0e0;
+}
+
+.dark-mode header nav ul li a:hover {
+  color: #00bfff;
+}
+
+.dark-mode footer {
+  background-color: #0b1b30;
+  color: #dcdcdc;
+}
+
+.dark-mode .footer-section h3 {
+  color: #00bfff;
+}
+
+.dark-mode .social-icons a {
+  color: #00bfff;
+}
+
+.dark-mode .social-icons a:hover {
+  color: #fff;
+}
+
+
+>>>>>>> vini
