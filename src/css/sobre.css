@@ -1,1 +1,134 @@
 @import url('../css/style.css');
+
+/* Seção principal */
+.sobre-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.sobre-container h2 {
+  font-size: 2em;
+  color: #64ffda;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* Missão, visão, valores */
+.missao-visao {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card-info {
+  background: #112240;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
+}
+
+.card-info h3 {
+  color: #64ffda;
+  margin-bottom: 10px;
+}
+
+/* Equipe */
+.membros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.membro {
+  background: #112240;
+  border-radius: 12px;
+  width: 260px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
+}
+
+.membro img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.membro h4 {
+  color: #64ffda;
+  margin-top: 10px;
+}
+
+.tecnologias ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.tecnologias li {
+  background: #112240;
+  margin: 8px auto;
+  width: 200px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* Frase final */
+.frase-final {
+  margin-top: 40px;
+  font-style: italic;
+  color: #64ffda;
+}
+
+/* Footer */
+footer {
+  background: #112240;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #64ffda;
+  margin-bottom: 10px;
+}
+
+/* Modo claro */
+body.claro {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+body.claro header {
+  background: #eaeaea;
+  color: #000;
+}
+
+body.claro .card-info,
+body.claro .membro,
+body.claro .tecnologias li {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.claro footer {
+  background: #eaeaea;
+  color: #000;
+}

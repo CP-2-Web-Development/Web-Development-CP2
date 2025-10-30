@@ -7,20 +7,20 @@
     <title>Quiz</title>
 </head>
 <body>
-    <h1>Quiz Page</h1>
     <header>
         <h2>Quiz</h2>
         <nav>
             <ul>
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./portifólio.html">Portifólio</a></li>
+                <li><a href="./market_place.html">Market Place</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./contato.html">Contato</a></li>
                 <div>
-                    <input type="button" class="cor" onclick="trocar('#C0C0C0')"/>
-                    <input type="button" class="cor" onclick="trocar('#808080')"/>
-                    <input type="button" class="cor" onclick="trocar('#000000')"/>
+                   <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
+                   <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
+                   <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
                 </div>
             </ul>
         </nav>
@@ -28,9 +28,10 @@
     <div class="resultado">
         <div id="msg"></div>
     </div>
+    
 </main>
     </header>
-
+<a href="./perguntas.html"><button onclick="">iniciar quizz</button></a>
     <script src="../js/quiz.js"></script>
 </body>
 </html>
