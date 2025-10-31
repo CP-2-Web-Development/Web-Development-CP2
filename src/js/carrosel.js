@@ -1,30 +1,45 @@
-//FUNÇÃO SLIDESHOW
 
-// DECLARANDO UM ARRAY DE IMAGENS
 
-let imagens=[
-    "src/assets/inicio/logo.png",
-    "src/assets/inicio/python_inicio.png",
-    "src/assets/inicio/java_inicio.jpg",
-    "src/assets/inicio/ruby_inicio.png",
-    "src/assets/inicio/csharp_inicio.png",
-    "src/assets/inicio/javascript_inicio.png",
-    "src/assets/inicio/php_inicio.png",
+// Array de imagens
+let imagens = [
+  "src/assets/inicio/python_inicio.png",
+  "src/assets/inicio/java_inicio.jpg",
+  "src/assets/inicio/ruby_inicio.png",
+  "src/assets/inicio/csharp_inicio.png",
+  "src/assets/inicio/javascript_inicio.png",
+  "src/assets/inicio/php_inicio.png",
 ];
 
-//DECLARANDO AS VARIAVEIS
+let links = [
+  "./src/pages/paginasPy/py.html",
+  "./src/pages/paginasjava/java.html",
+  "./src/pages/paginasRuby/ruby.html",
+  "./src/pages/csharp/csharp.html",
+  "./src/pages/paginasjs/js.html",
+  "./src/pages/paginasPhp/php.html",
+];
 
-let i=0;
-let tempo =5000; // milisegundos
+let i = 0;
+let tempo = 3000; 
 
-//função 
+function slideShow() {
+  
+  const imagem = document.getElementById("image");
+  const link = document.getElementById("linkImagem");
 
-function slideShow(){
-    document.getElementById("image").src=imagens[i];
-    i++;
-    if(i == imagens.length){
-        i=0;
-    }
-    setTimeout(slideShow,tempo)
+  
+  imagem.src = imagens[i];
+  link.href = links[i];
+
+  
+  i++;
+  if (i === imagens.length) {
+    i = 0;
+  }
+
+  
+  setTimeout(slideShow, tempo);
 }
+
+
 slideShow();
