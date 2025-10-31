@@ -1,0 +1,24 @@
+/* ======== CARROSSEL ======== */
+.carrossel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 800px;     /* 🔹 largura fixa padronizada */
+  height: 450px;    /* 🔹 altura fixa padronizada */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: #000; /* fundo preto pra evitar bordas brancas */
+}
+
+.carrossel-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔹 garante que a imagem preencha o espaço sem distorcer */
+  transition: opacity 1s ease-in-out;
+}
+.img{
+  width: 50%;
+  height: auto;
+}
