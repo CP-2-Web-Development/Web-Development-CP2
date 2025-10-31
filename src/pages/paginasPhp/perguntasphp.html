@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz de JavaScript</title>
+  <title>Quiz de PHP</title>
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -25,42 +25,42 @@
         </nav>
     </header>
 
-  <h1>Quiz sobre JavaScript</h1>
+  <h1>Quiz sobre PHP</h1>
 
   <form id="quiz-form">
     <div>
-      <p>1. O que é JavaScript?</p>
+      <p>1. O que é PHP?</p>
       <input type="radio" name="q1" value="a"> A) Uma linguagem de marcação<br>
-      <input type="radio" name="q1" value="b"> B) Uma linguagem de programação<br>
-      <input type="radio" name="q1" value="c"> C) Um banco de dados<br>
+      <input type="radio" name="q1" value="b"> B) Uma linguagem de programação voltada para o desenvolvimento web<br>
+      <input type="radio" name="q1" value="c"> C) Um sistema operacional<br>
     </div>
 
     <div>
-      <p>2. Qual é a função de <code>document.getElementById()</code>?</p>
-      <input type="radio" name="q2" value="a"> A) Cria um novo elemento HTML<br>
-      <input type="radio" name="q2" value="b"> B) Obtém um elemento pelo seu ID<br>
-      <input type="radio" name="q2" value="c"> C) Remove um elemento da página<br>
+      <p>2. O que significa a sigla PHP?</p>
+      <input type="radio" name="q2" value="a"> A) Personal Home Page<br>
+      <input type="radio" name="q2" value="b"> B) PHP: Hypertext Preprocessor<br>
+      <input type="radio" name="q2" value="c"> C) Page Hosting Program<br>
     </div>
 
     <div>
-      <p>3. Qual operador é usado para comparar valores e tipos?</p>
-      <input type="radio" name="q3" value="a"> A) ==<br>
-      <input type="radio" name="q3" value="b"> B) ===<br>
-      <input type="radio" name="q3" value="c"> C) =<br>
+      <p>3. Qual é a extensão padrão dos arquivos PHP?</p>
+      <input type="radio" name="q3" value="a"> A) .ph<br>
+      <input type="radio" name="q3" value="b"> B) .php<br>
+      <input type="radio" name="q3" value="c"> C) .html<br>
     </div>
 
     <div>
-      <p>4. Como declarar uma variável em JavaScript?</p>
-      <input type="radio" name="q4" value="a"> A) let, const ou var<br>
-      <input type="radio" name="q4" value="b"> B) int, float ou string<br>
-      <input type="radio" name="q4" value="c"> C) define, decl, varname<br>
+      <p>4. Como se inicia um bloco de código PHP dentro de um arquivo HTML?</p>
+      <input type="radio" name="q4" value="a"> A) &lt;% %&gt;<br>
+      <input type="radio" name="q4" value="b"> B) &lt;?php ?&gt;<br>
+      <input type="radio" name="q4" value="c"> C) &lt;php&gt;&lt;/php&gt;<br>
     </div>
 
     <div>
-      <p>5. O que faz o método <code>addEventListener()</code>?</p>
-      <input type="radio" name="q5" value="a"> A) Adiciona um evento a um elemento<br>
-      <input type="radio" name="q5" value="b"> B) Remove um evento<br>
-      <input type="radio" name="q5" value="c"> C) Cria um loop infinito<br>
+      <p>5. Qual função é usada para exibir texto na tela em PHP?</p>
+      <input type="radio" name="q5" value="a"> A) echo<br>
+      <input type="radio" name="q5" value="b"> B) print_text<br>
+      <input type="radio" name="q5" value="c"> C) show()<br>
     </div>
 
     <button type="button" onclick="verificarRespostas()">Enviar Respostas</button>
@@ -68,7 +68,7 @@
 
   <button type="button" onclick="resetarQuiz()">Reiniciar Quiz</button>
 
-  <script src="../js/perguntas.js"></script>
+  <script src="../../js/quizPHP.js"></script>
 
   <footer>
     <div class="footer-container">
@@ -97,7 +97,8 @@
       <p>&copy; FIAP | Todos os direitos reservados</p>
     </div>
   </footer>
+
   <script src="../../js/script.js"></script>
-  <script src="../../js/quizJs.js"></script>
+  <script src="../../js/quizPHP.js"></script>
 </body>
 </html>
