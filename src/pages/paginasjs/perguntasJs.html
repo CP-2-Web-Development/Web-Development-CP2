@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de JavaScript</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="./../sobre.html">Sobre</a></li>
+        <li><a href="./../portifólio.html">Portfólio</a></li>
+        <li><a href="./../market_place.html">Market Place</a></li>
+        <li><a href="./../quiz.html">Quiz</a></li>
+        <li><a href="./../contato.html">Contato</a></li>
+        <div>
+          <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
+          <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
+          <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Quiz sobre JavaScript</h1>
+
+  <form id="quiz-form">
+    <div>
+      <p>1. O que é JavaScript?</p>
+      <input type="radio" name="q1" value="a"> A) Uma linguagem de marcação<br>
+      <input type="radio" name="q1" value="b"> B) Uma linguagem de programação<br>
+      <input type="radio" name="q1" value="c"> C) Um banco de dados<br>
+    </div>
+
+    <div>
+      <p>2. Qual é a função de <code>document.getElementById()</code>?</p>
+      <input type="radio" name="q2" value="a"> A) Cria um novo elemento HTML<br>
+      <input type="radio" name="q2" value="b"> B) Obtém um elemento pelo seu ID<br>
+      <input type="radio" name="q2" value="c"> C) Remove um elemento da página<br>
+    </div>
+
+    <div>
+      <p>3. Qual operador é usado para comparar valores e tipos?</p>
+      <input type="radio" name="q3" value="a"> A) ==<br>
+      <input type="radio" name="q3" value="b"> B) ===<br>
+      <input type="radio" name="q3" value="c"> C) =<br>
+    </div>
+
+    <div>
+      <p>4. Como declarar uma variável em JavaScript?</p>
+      <input type="radio" name="q4" value="a"> A) let, const ou var<br>
+      <input type="radio" name="q4" value="b"> B) int, float ou string<br>
+      <input type="radio" name="q4" value="c"> C) define, decl, varname<br>
+    </div>
+
+    <div>
+      <p>5. O que faz o método <code>addEventListener()</code>?</p>
+      <input type="radio" name="q5" value="a"> A) Adiciona um evento a um elemento<br>
+      <input type="radio" name="q5" value="b"> B) Remove um evento<br>
+      <input type="radio" name="q5" value="c"> C) Cria um loop infinito<br>
+    </div>
+
+    <button type="button" onclick="verificarRespostas()">Enviar Respostas</button>
+  </form>
+
+  <button type="button" onclick="resetarQuiz()">Reiniciar Quiz</button>
+
+  <script src="../js/perguntas.js"></script>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>TechNova</h3>
+        <p>Um portal voltado para inovação, tecnologia e o futuro digital. 🚀</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p><strong>Email:</strong> atendimento@fiap.com.br</p>
+        <p><strong>Telefone:</strong> (11) 3385-8010</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Nos siga no Instagram</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mnzsfp_/" target="_blank"><i class="fab fa-instagram"></i> mnzsfp_</a><br>
+          <a href="https://www.instagram.com/ceszanin/" target="_blank"><i class="fab fa-instagram"></i> ceszanin</a><br>
+          <a href="https://www.instagram.com/vinicius_kozonoe/" target="_blank"><i class="fab fa-instagram"></i> vinicius_kozonoe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; FIAP | Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/quizJs.js"></script>
+</body>
+</html>
