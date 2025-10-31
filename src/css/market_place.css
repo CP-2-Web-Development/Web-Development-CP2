@@ -3,8 +3,12 @@
 .titulo-secao {
   font-size: 2rem;
   text-align: center;
-  color: white;
+  color: black;
   margin-bottom: 20px;
+}
+
+.dark-mode h2 {
+  color: #ffffff;
 }
 
 .cards-container {

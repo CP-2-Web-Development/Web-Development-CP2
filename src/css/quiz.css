@@ -9,8 +9,26 @@ main {
 }
 
 body {
-    background: #000A7C;
-background: radial-gradient(circle, rgba(0, 10, 124, 1) 0%, rgba(114, 124, 194, 1) 53%, rgba(0, 10, 124, 1) 100%);
+  background: #b1b1c9;
+  background: radial-gradient(
+    circle,
+    rgba(177, 177, 201, 1) 0%,
+    rgba(192, 194, 194, 1) 53%,
+    rgba(177, 177, 201, 1) 100%
+  );
+  color: #111;
+  transition: background 0.5s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background: #000a7c;
+  background: radial-gradient(
+    circle,
+    rgba(0, 10, 124, 1) 0%,
+    rgba(114, 124, 194, 1) 53%,
+    rgba(0, 10, 124, 1) 100%
+  );
+  color: #e0e0e0;
 }
 
 main a button {
