@@ -7,6 +7,72 @@
     <title>Php</title>
 </head>
 <body>
+  <style>
+    main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  flex-direction: column;
+}
+
+body {
+  background: #b1b1c9;
+  background: radial-gradient(
+    circle,
+    rgba(177, 177, 201, 1) 0%,
+    rgba(192, 194, 194, 1) 53%,
+    rgba(177, 177, 201, 1) 100%
+  );
+  color: #111;
+  transition: background 0.5s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background: #000a7c;
+  background: radial-gradient(
+    circle,
+    rgba(0, 10, 124, 1) 0%,
+    rgba(114, 124, 194, 1) 53%,
+    rgba(0, 10, 124, 1) 100%
+  );
+  color: #e0e0e0;
+}
+
+main a button {
+  background-color: #00bfff;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main a button:hover {
+  transform: scale(1.1);
+  background-color: #0099cc;
+}
+
+main a button:active {
+  transform: scale(0.97);
+}
+
+.dark-mode main a button {
+  background-color: #007acc;
+  color: #e0e0e0;
+}
+
+.high-contrast-mode main a button {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+}
+  </style>
     <header>
         <nav>
             <ul>
@@ -16,32 +82,19 @@
                 <li><a href="../market_place.html">Market Place</a></li>
                 <li><a href="../quiz.html">Quiz</a></li>
                 <li><a href="../contato.html">Contato</a></li>
-                <div>
-                   <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
-                   <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
-                   <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
-                </div>
-            </ul>
+              </ul>
+              <div>
+                 <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
+                 <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
+                 <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+              </div>
         </nav>
     </header>
+
+    <main>
     <h1>PHP</h1>
-    <h2>O que é PHP?</h2>
-    <p>PHP é uma linguagem de programação de script amplamente utilizada para desenvolvimento web. Criada por Rasmus Lerdorf em 1994, PHP é especialmente adequada para a criação de páginas dinâmicas e interativas. Sua sintaxe é simples e fácil de aprender, o que a torna uma escolha popular entre desenvolvedores iniciantes e experientes.</p>
-
-    <h2>Por que aprender PHP?</h2>
-    <ul>
-        <li>PHP é uma das linguagens de programação mais populares para desenvolvimento web, com uma grande demanda no mercado de trabalho.</li>
-        <li>Possui uma vasta biblioteca de funções e uma comunidade ativa que contribui com frameworks e ferramentas.</li>
-        <li>É a linguagem por trás de grandes plataformas como WordPress, Facebook e Wikipedia.</li>
-        <li>Facilita a integração com bancos de dados e a criação de aplicações web robustas.</li>
-    </ul>
-
-    <h2>O que você vai aprender neste curso:</h2>
-    <p>Neste curso de PHP, você aprenderá desde os conceitos básicos da linguagem até técnicas avançadas de programação. Abordaremos tópicos como sintaxe, estruturas de dados, orientação a objetos, manipulação de arquivos e desenvolvimento web com PHP. Ao final do curso, você estará apto a criar suas próprias aplicações em PHP.</p>
-    <p>tem coragem de enfrentar a linguagem dos antigos servidores que sustentam a Web como conhecemos? prove seus conhecimentos no Quizz de PHP</p>
-
-    <a href="./quizPhp.html"><button>Iniciar Quiz de PHP</button></a>
-
+    <a href="./perguntasphp.html"><button>Iniciar Quiz de PHP</button></a>
+    </main>
 
     <footer>
   <div class="footer-container">

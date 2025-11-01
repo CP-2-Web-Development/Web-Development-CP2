@@ -7,6 +7,72 @@
     <title>Ruby</title>
 </head>
 <body>
+  <style>
+    main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  flex-direction: column;
+}
+
+body {
+  background: #b1b1c9;
+  background: radial-gradient(
+    circle,
+    rgba(177, 177, 201, 1) 0%,
+    rgba(192, 194, 194, 1) 53%,
+    rgba(177, 177, 201, 1) 100%
+  );
+  color: #111;
+  transition: background 0.5s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background: #000a7c;
+  background: radial-gradient(
+    circle,
+    rgba(0, 10, 124, 1) 0%,
+    rgba(114, 124, 194, 1) 53%,
+    rgba(0, 10, 124, 1) 100%
+  );
+  color: #e0e0e0;
+}
+
+main a button {
+  background-color: #00bfff;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main a button:hover {
+  transform: scale(1.1);
+  background-color: #0099cc;
+}
+
+main a button:active {
+  transform: scale(0.97);
+}
+
+.dark-mode main a button {
+  background-color: #007acc;
+  color: #e0e0e0;
+}
+
+.high-contrast-mode main a button {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+}
+  </style>
     <header>
         <nav>
             <ul>
@@ -16,32 +82,19 @@
                 <li><a href="../market_place.html">Market Place</a></li>
                 <li><a href="../quiz.html">Quiz</a></li>
                 <li><a href="../contato.html">Contato</a></li>
-                <div>
-                   <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
-                   <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
-                   <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
-                </div>
-            </ul>
+              </ul>
+              <div>
+                 <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
+                 <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
+                 <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+              </div>
         </nav>
     </header>
+
+    <main>
     <h1>Ruby</h1>
-    <h2>O que é Ruby?</h2>
-    <p>Ruby é uma linguagem de programação dinâmica e de código aberto, focada na simplicidade e produtividade. Foi criada por Yukihiro "Matz" Matsumoto em meados dos anos 90. Ruby é conhecida por sua sintaxe elegante e legível, que se assemelha à linguagem natural, facilitando o aprendizado e a escrita de código.</p>
-
-    <h2>Por que aprender Ruby?</h2>
-    <ul>
-        <li> A sintaxe intuitiva de Ruby torna mais fácil para iniciantes aprenderem a programar.</li>
-        <li> Ruby possui uma comunidade vibrante que contribui com bibliotecas, frameworks e suporte.</li>
-        <li> Ruby on Rails, um framework popular baseado em Ruby, é amplamente utilizado para desenvolvimento web rápido e eficiente.</li>
-        <li> Ruby é uma linguagem versátil que pode ser usada para uma variedade de aplicações, desde scripts simples até sistemas complexos.</li>
-    </ul>
-    <h2>O que você vai aprender neste curso:</h2>
-    <p>Neste curso de Ruby, você aprenderá desde os conceitos básicos da linguagem até técnicas avançadas de programação. Abordaremos tópicos como sintaxe, estruturas de dados, orientação a objetos, manipulação de arquivos e desenvolvimento web com Ruby on Rails. Ao final do curso, você estará apto a criar suas próprias aplicações em Ruby.</p>
-    
-    <p>Você fala a língua das gems e do Rails? Então é hora de provar! Encare o Quiz de Ruby e veja se é um verdadeiro mestre da linguagem mais charmosa do mundo!</p>
-
     <a href="./perguntasRuby.html"><button>Iniciar Quiz de Ruby</button></a>
-
+    </main>
 
     <footer>
   <div class="footer-container">
