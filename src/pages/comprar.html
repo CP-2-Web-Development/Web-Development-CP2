@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adquira cursos online com segurança. Aprenda linguagens de programação com a Agnello Academy.">
+  <meta name="keywords" content="cursos online, aprender programação, curso de JavaScript, curso de Python, curso de C#, curso de Java, curso de Ruby, curso de PHP">
+
+  <title>CodeOn</title>
+  <link rel="stylesheet" href="../css/compras.css">
+</head>
+
+<body>
+  <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./portifolio.html">Portfólio</a></li>
+                <li><a href="./market_place.html">Market Place</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <div>
+                   <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
+                   <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
+                   <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section class="texto-destaque">
+      <h2>Comprar Cursos Online</h2>
+      <p>Escolha sua linguagem favorita e comece a aprender hoje mesmo com os melhores especialistas.</p>
+    </section>
+
+    <div class="compra-container">
+      <div class="compra-bloco">
+        <h3>Formulário de Inscrição</h3>
+        <form class="form-compras" method="get" action="./confirmacao.html">
+          
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required><br>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required><br>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br><br>
+
+          <label for="curso">Selecione o curso desejado:</label><br>
+          <select id="curso" name="curso" required>
+            <option value="">-- Escolha --</option>
+            <option value="javascript">JavaScript - R$ 249,00</option>
+            <option value="csharp">C# - R$ 279,00</option>
+            <option value="java">Java - R$ 299,00</option>
+            <option value="python">Python - R$ 259,00</option>
+            <option value="ruby">Ruby - R$ 239,00</option>
+            <option value="php">PHP - R$ 269,00</option>
+          </select><br><br>
+
+          <label>Forma de pagamento:</label>
+          <div class="opcoes-pagamento">
+            <label><input type="radio" name="pagamento" value="pix" required> PIX</label>
+            <label><input type="radio" name="pagamento" value="cartao"> Cartão de Crédito</label>
+            <label><input type="radio" name="pagamento" value="boleto"> Boleto Bancário</label>
+            <label><input type="radio" name="pagamento" value="paypal"> PayPal</label>
+          </div><br>
+
+          <label for="observacoes">Observações (opcional):</label><br>
+          <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alguma dúvida ou informação adicional?"></textarea>
+
+          <center><button type="submit">Confirmar Inscrição</button></center>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <br><br><br>
+
+  <footer>
+    <p>&copy; 2025 Agnello Academy. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
