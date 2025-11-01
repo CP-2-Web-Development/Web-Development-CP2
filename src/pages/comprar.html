@@ -6,23 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Adquira cursos online com segurança. Aprenda linguagens de programação com a Agnello Academy.">
   <meta name="keywords" content="cursos online, aprender programação, curso de JavaScript, curso de Python, curso de C#, curso de Java, curso de Ruby, curso de PHP">
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <title>CodeOn</title>
   <link rel="stylesheet" href="../css/compras.css">
 </head>
 
 <body>
  <header>
-    <h1>CodeOn</h1>
-    <nav>
-      <ul>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="./sobre.html">Sobre</a></li>
-        <li><a href="./portifolio.html">Portfólio</a></li>
-        <li><a href="./market_place.html">Market Place</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-      </ul>
-      <div class="btn-trocaCor">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./portifolio.html">Portfólio</a></li>
+                <li><a href="./market_place.html">Market Place</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <div class="btn-trocaCor">
   <div class="atual-container">
     <input type="checkbox" id="modo-atual">
     <label for="modo-atual" class="atual-label">
@@ -34,8 +32,9 @@
   <button class="btn-contraste" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
   <button id="btn-daltonismo" class="btn-dalt" title="Filtro Daltonismo">🎨 Daltonismo</button>
 </div>
-    </nav>
-  </header>
+            </ul>
+        </nav>
+    </header>
 
   <main>
     <section class="texto-destaque">
@@ -46,7 +45,7 @@
     <div class="compra-container">
       <div class="compra-bloco">
         <h3>Formulário de Inscrição</h3>
-        <form class="form-compras" method="get" action="./confirmacao.html">
+        <form class="form-compras" >
           
           <label for="nome">Nome Completo:</label>
           <input type="text" id="nome" name="nome" required><br>
@@ -79,7 +78,7 @@
           <label for="observacoes">Observações (opcional):</label><br>
           <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alguma dúvida ou informação adicional?"></textarea>
 
-          <center><button type="submit" class="btn">Confirmar Inscrição</button></center>
+          <center><button class="btn" onclick="alertaBonito(event)">Confirmar Inscrição</button></center>
         </form>
       </div>
     </div>

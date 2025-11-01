@@ -1,28 +1,25 @@
 function trocar(modo) {
-  // Primeiro, tirar todos os estilos
-  document.body.classList.remove('dark-mode');
-  document.body.classList.remove('high-contrast-mode');
-  document.body.classList.remove('daltonismo');
+  // Remove todos os estilos anteriores
+  document.body.classList.remove('dark-mode', 'high-contrast-mode');
 
+  // Aplica o modo selecionado
   if (modo === 'escuro') {
     document.body.classList.add('dark-mode');
-  }
-
-  if (modo === 'contraste') {
+  } else if (modo === 'contraste') {
     document.body.classList.add('high-contrast-mode');
-  }
-
-  if (modo === 'daltonismo') {
+  } else if (modo === 'daltonismo') {
     document.body.classList.add('daltonismo');
+    atualizaTexto();
+    
   }
 
-  // Se for modo claro, não precisa adicionar nada
+  // Atualiza o texto do botão de daltonismo
+  
+  // Se for modo claro, não adiciona nada (é o padrão)
 }
 
 // Alternar modo escuro com checkbox
-
 const atual = document.getElementById('modo-atual');
-
 if (atual) {
   atual.addEventListener('change', function() {
     if (atual.checked === true) {
@@ -37,18 +34,22 @@ if (atual) {
 const btnDaltonismo = document.getElementById('btn-daltonismo');
 if (btnDaltonismo) {
   btnDaltonismo.addEventListener('click', () => {
-    trocar('daltonismo');
-    const ativo = document.body.classList.contains('daltonismo');
-    btnDaltonismo.textContent = ativo ? '🎨 Filtro Ativo' : '🎨';
+    // alterna o estado manualmente
+    if (document.body.classList.contains('daltonismo')) {
+      document.body.classList.remove('daltonismo');
+      btnDaltonismo.textContent = '🎨 Filtro Desativado';
+    } else {
+      document.body.classList.add('daltonismo');
+      btnDaltonismo.textContent = '🎨 Filtro Ativo';
+    }
   });
 }
-
 // --- Alerta bonito ---
 function alertaBonito(event) {
   event.preventDefault(); // impede recarregamento do formulário
   Swal.fire({
-    title: "Mensagem enviada!",
+    title: "Sua ação foi concluída com sucesso!",
     icon: "success",
-    draggable: true
+    draggable: true //deixa o mouse arrastável ou n
   });
 }

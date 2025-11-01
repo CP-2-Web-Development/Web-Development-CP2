@@ -15,7 +15,7 @@
       if (r1 && r1.value == "b") certas++;
       if (r2 && r2.value == "a") certas++;
       if (r3 && r3.value == "b") certas++;
-      if (r4 && r4.value == "c") certas++;
+      if (r4 && r4.value == "a") certas++;
       if (r5 && r5.value == "a") certas++;
 
       form.innerHTML = "<h2>Você acertou " + certas + " de 5 perguntas!</h2>";
