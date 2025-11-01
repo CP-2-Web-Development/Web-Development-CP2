@@ -1,65 +1,105 @@
-@import url(./style.css);
-    main {
+@import url("./style.css");
+
+
+main {
+  background: linear-gradient(135deg, #f0f2ff 0%, #dcdcff 100%);
+  color: #111;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.dark-mode h1 {
+  color: #00bfff;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.dark-mode h2 {
+  color: #00bfff;
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+
+p {
+  max-width: 900px;
+  margin: 15px auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.dark-mode p {
+  color: #d0d0d0;
+}
+
+
+.botoes {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  flex-direction: column;
+  gap: 20px;
 }
 
-body {
-  background: #b1b1c9;
-  background: radial-gradient(
-    circle,
-    rgba(177, 177, 201, 1) 0%,
-    rgba(192, 194, 194, 1) 53%,
-    rgba(177, 177, 201, 1) 100%
-  );
-  color: #111;
-  transition: background 0.5s ease, color 0.3s ease;
-}
-
-.dark-mode {
-  background: #000a7c;
-  background: radial-gradient(
-    circle,
-    rgba(0, 10, 124, 1) 0%,
-    rgba(114, 124, 194, 1) 53%,
-    rgba(0, 10, 124, 1) 100%
-  );
-  color: #e0e0e0;
-}
-
-main a button {
+.botoes a,
+.botoes button {
+  text-decoration: none;
   background-color: #00bfff;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  padding: 18px 40px;
   border: none;
   border-radius: 12px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: all 1s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-main a button:hover {
-  transform: scale(1.1);
-  background-color: #0099cc;
+.btn {
+  display: block;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
 }
 
-main a button:active {
-  transform: scale(0.97);
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
-.dark-mode main a button {
-  background-color: #007acc;
-  color: #e0e0e0;
+.dark-mode .botoes a,
+.dark-mode .botoes button {
+  background-color: #007bff;
+  color: #fff;
 }
 
-.high-contrast-mode main a button {
-  background-color: black;
-  color: yellow;
-  border: 2px solid yellow;
+.dark-mode .botoes a:hover,
+.dark-mode .botoes button:hover {
+  background-color: #005fcc;
 }

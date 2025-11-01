@@ -1,12 +1,9 @@
 @import url("./style.css");
 
-/* ============================
-   COMPRAS / FORMULÁRIO DE CURSOS
-============================ */
 
 .texto-destaque {
   text-align: center;
-  background: linear-gradient(135deg, #ffffff, #00bfff);
+  background: linear-gradient(135deg, #26406e, #112240);
   color: #fff;
   padding: 50px 20px;
   border-bottom: 3px solid #0056b3;
@@ -23,9 +20,6 @@
   opacity: 0.95;
 }
 
-/* ============================
-   CONTAINER E BLOCO DE COMPRA
-============================ */
 
 .compra-container {
   display: flex;
@@ -59,9 +53,6 @@
   padding-bottom: 5px;
 }
 
-/* ============================
-   FORMULÁRIO
-============================ */
 
 .form-compras label {
   display: block;
@@ -70,7 +61,7 @@
   color: #111;
 }
 
-.form-compras input,
+.form-compras,
 .form-compras select,
 .form-compras textarea {
   width: 100%;
@@ -91,7 +82,7 @@
 }
 
 .opcoes-pagamento {
-  font-size: 10px;
+  font-size: 1px;
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -99,15 +90,14 @@
 }
 
 .opcoes-pagamento label {
+  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
 }
 
-/* ============================
-   BOTÃO
-============================ */
 
-button {
+
+.btn {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -120,55 +110,8 @@ button {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover {
+.btn:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
 
-/* ============================
-   MODO ESCURO E CONTRASTE
-============================ */
-
-.dark-mode .texto-destaque {
-  background: linear-gradient(135deg, #0b1b30, #112240);
-  border-bottom-color: #00bfff;
-}
-
-.dark-mode .compra-bloco {
-  background-color: #112240;
-  color: #e0e0e0;
-  box-shadow: 0 4px 14px rgba(0, 191, 255, 0.15);
-}
-
-.dark-mode .form-compras input,
-.dark-mode .form-compras select,
-.dark-mode .form-compras textarea {
-  background-color: #0a192f;
-  color: #e0e0e0;
-  border: 1px solid #00bfff;
-}
-
-.dark-mode button {
-  background-color: #00bfff;
-  color: #0a192f;
-}
-
-.dark-mode button:hover {
-  background-color: #66d1ff;
-}
-
-.high-contrast-mode .compra-bloco {
-  background-color: #000;
-  color: #ffff00;
-  border: 2px solid #ffff00;
-}
-
-.high-contrast-mode button {
-  background-color: #ffff00;
-  color: #000;
-}
-
-.high-contrast-mode button:hover {
-  background-color: #00ffff;
-  color: #000;
-}

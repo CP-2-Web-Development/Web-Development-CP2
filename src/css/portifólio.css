@@ -151,18 +151,3 @@ main {
   color: #00bfff;
 }
 
-/* ======== RESPONSIVIDADE ======== */
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projeto {
-    padding: 20px;
-  }
-
-  main {
-    padding: 10px;
-  }
-}
