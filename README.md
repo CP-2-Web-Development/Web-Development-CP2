@@ -141,7 +141,7 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 ## 🚀 Como Executar Localmente
 
 ```bash
-git clone https://github.com/seuusuario/code-on.git
+git clone https://github.com/CP-2-Web-Development/Web-Development-CP2.git
 cd code-on
 ```
 

@@ -11,7 +11,7 @@ let imagens = [
 let links = [
   "./src/pages/paginasPy/py.html",
   "./src/pages/paginasjava/java.html",
-  "./src/pages/paginasRuby/quizRuby.html",
+  "./src/pages/paginasRuby/ruby.html",
   "./src/pages/csharp/csharp.html",
   "./src/pages/paginasjs/quizJs.html",
   "./src/pages/paginasPhp/php.html",
