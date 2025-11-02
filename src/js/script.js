@@ -13,12 +13,8 @@ function trocar(modo) {
     
   }
 
-  // Atualiza o texto do botão de daltonismo
-  
-  // Se for modo claro, não adiciona nada (é o padrão)
 }
 
-// Alternar modo escuro com checkbox
 const atual = document.getElementById('modo-atual');
 if (atual) {
   atual.addEventListener('change', function() {
@@ -29,8 +25,6 @@ if (atual) {
     }
   });
 }
-
-// --- Botão filtro daltonismo ---
 const btnDaltonismo = document.getElementById('btn-daltonismo');
 if (btnDaltonismo) {
   btnDaltonismo.addEventListener('click', () => {

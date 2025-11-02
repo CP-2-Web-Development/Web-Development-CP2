@@ -1,6 +1,6 @@
 @import url('../css/style.css');
 
-/* Seção principal */
+
 .sobre-container {
   max-width: 1000px;
   margin: 60px auto;
@@ -20,7 +20,7 @@
   margin-bottom: 40px;
 }
 
-/* Missão, visão, valores */
+
 .missao-visao {
   display: flex;
   justify-content: space-around;
@@ -44,7 +44,7 @@
 .card-info p{
   color: #eaeaea;
 }
-/* Equipe */
+
 .membros {
   display: flex;
   justify-content: center;
@@ -87,14 +87,12 @@
   border-radius: 6px;
 }
 
-/* Frase final */
 .frase-final {
   margin-top: 40px;
   font-style: italic;
   color: #000000;
 }
 
-/* Footer */
 footer {
   background: #112240;
   color: white;
@@ -115,7 +113,6 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Modo claro */
 body.claro {
   background-color: #f4f4f4;
   color: #000;

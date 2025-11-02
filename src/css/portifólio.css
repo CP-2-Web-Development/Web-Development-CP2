@@ -2,7 +2,7 @@
 
 
 
-/* ======== ESTRUTURA GERAL ======== */
+
 main {
   max-width: 1100px;
   margin: 40px auto;
@@ -10,7 +10,6 @@ main {
   line-height: 1.8;
 }
 
-/* ======== INTRO ======== */
 .intro {
   text-align: center;
   margin-bottom: 50px;
@@ -18,7 +17,7 @@ main {
 
 .intro h2 {
   font-size: 2.2rem;
-  color: #007bff;
+  color: #112240;
   margin-bottom: 15px;
 }
 
@@ -59,7 +58,7 @@ main {
 }
 
 .dark-mode .projeto h3 {
-  color: #00bfff;
+  color: #112240;
 }
 
 .projeto p {
@@ -81,7 +80,7 @@ main {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #112240;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -90,11 +89,11 @@ main {
 }
 
 .projeto .btn:hover {
-  background-color: #0056b3;
+  background-color: #112240;
   transform: scale(1.05);
 }
 
-/* ======== OUTROS PROJETOS ======== */
+
 .outros-projetos {
   text-align: center;
 }
@@ -102,7 +101,7 @@ main {
 .outros-projetos h3 {
   font-size: 1.6rem;
   margin-bottom: 10px;
-  color: #007bff;
+  color: #112240;
 }
 
 .outros-projetos p {
@@ -114,7 +113,7 @@ main {
   color: #ccc;
 }
 
-/* ======== CARDS ======== */
+
 .cards {
   display: flex;
   flex-wrap: wrap;

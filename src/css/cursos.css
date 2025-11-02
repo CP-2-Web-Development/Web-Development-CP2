@@ -80,7 +80,7 @@ p {
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
+  background-color: #112240;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -89,7 +89,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #112240;
   transform: scale(1.05);
 }
 

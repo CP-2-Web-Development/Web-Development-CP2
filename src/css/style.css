@@ -1,6 +1,6 @@
 @import url(./carrosel.css);
 @import url("./btnCor.css");
-
+@import url("./footer.css");
 body {
   margin: 0;
   padding: 0;
@@ -73,62 +73,6 @@ header nav ul li a:hover {
   box-shadow: 0 0 10px #00bfff;
 }
 
-footer {
-  background-color: #112240;
-  color: #e0e0e0;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: auto;
-  transition: 0.4s;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-  margin: 10px;
-}
-
-.footer-section h3 {
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.social-icons a {
-  color: #00bfff;
-  font-size: 18px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 0;
-  transition: 0.3s;
-}
-
-.social-icons a i {
-  margin-right: 6px;
-}
-
-.social-icons a:hover {
-  color: #fff;
-  transform: scale(1.1);
-}
-
-.footer-bottom {
-  border-top: 1px solid #00bfff;
-  padding-top: 10px;
-  font-size: 14px;
-  color: #aaa;
-}
 .high-contrast-mode {
   background-color: #000000 !important;
   color: #ffff00 !important;
@@ -202,7 +146,6 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-/* Ícones */
 .atual-label .icone-sol {
   color: #ffa500;
   font-size: 1rem;
@@ -213,7 +156,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Botão deslizante */
 .atual-label::after {
   content: "";
   position: absolute;
@@ -226,7 +168,6 @@ footer {
   transition: transform 0.3s ease;
 }
 
-/* Quando ativado */
 #modo-atual:checked + .atual-label {
   background-color: #ffa500;
 }

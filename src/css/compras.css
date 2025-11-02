@@ -98,7 +98,7 @@
 
 
 .btn {
-  background-color: #007bff;
+  background-color: #112240;
   color: #fff;
   border: none;
   padding: 12px 35px;
@@ -111,7 +111,7 @@
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #112240;
   transform: scale(1.05);
 }
 

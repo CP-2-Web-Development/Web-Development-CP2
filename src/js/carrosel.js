@@ -1,6 +1,4 @@
 
-
-// Array de imagens
 let imagens = [
   "src/assets/inicio/python_inicio.png",
   "src/assets/inicio/java_inicio.jpg",

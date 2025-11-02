@@ -4,8 +4,6 @@
 
     function verificarRespostas() {
       certas = 0;
-
-      // checked serve pra capturar o input selecionado
       var r1 = document.querySelector('input[name="q1"]:checked');
       var r2 = document.querySelector('input[name="q2"]:checked');
       var r3 = document.querySelector('input[name="q3"]:checked');
