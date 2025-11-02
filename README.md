@@ -142,7 +142,7 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 
 ```bash
 git clone https://github.com/CP-2-Web-Development/Web-Development-CP2.git
-cd code-on
+cd Web-Development-CP2
 ```
 
 Em seguida, abra o arquivo `index.html` diretamente no navegador  
