@@ -1,8 +1,4 @@
-@import url("./style.css");
-
-/* ============================
-   LAYOUT GERAL DA PÁGINA DE CONTATO
-============================ */
+@import url(./style.css);
 
 .contato-container {
   display: flex;

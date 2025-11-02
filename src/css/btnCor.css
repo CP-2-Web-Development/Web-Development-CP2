@@ -1,0 +1,33 @@
+button {
+  background-color: #00bfff;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #0099cc;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.dark-mode button {
+  background-color: #007acc;
+  color: #e0e0e0;
+}
+
+.high-contrast-mode button {
+  background-color: #000;
+  color: #ff0;
+  border: 2px solid #ff0;
+}

@@ -1,7 +1,7 @@
 @import url('./style.css');
 
 body {
-  background: #b1b1c9;
+  background: #13134d;
   background: radial-gradient(circle, rgba(177,177,201,1) 0%, rgba(192,194,194,1) 53%, rgba(177,177,201,1) 100%);
   font-family: 'Poppins', sans-serif;
   color: #111;
@@ -247,9 +247,9 @@ button {
   background-color: #00bfff;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 14px 35px;
+  padding: 10px 20px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
