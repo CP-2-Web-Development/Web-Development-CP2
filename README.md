@@ -1,11 +1,11 @@
-# 💻 Web-Development-CP2 — **Code On**
+#  Web-Development-CP2 — **Code On**
 
 **Code On** é uma plataforma educacional voltada ao ensino de **linguagens de programação e tecnologias emergentes**, desenvolvida com **HTML, CSS e JavaScript**.  
 O projeto tem como objetivo exercitar a criação de páginas interativas, organização modular de conteúdo e navegação entre múltiplas seções temáticas.
 
 ---
 
-## 📂 Estrutura de Pastas
+## Estrutura de Pastas
 
 ```plaintext
 .
@@ -65,44 +65,44 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
-### 🏠 Página Inicial (`index.html`)
+### Página Inicial (`index.html`)
 - Carrossel dinâmico com imagens das linguagens de programação.  
 - Navegação rápida entre cursos, quizzes e seções principais.  
 - Menu fixo com alternância entre **modo claro, escuro e contraste** (acessibilidade).
 
-### 🛒 Marketplace (`market_place.html`)
+### Marketplace (`market_place.html`)
 - Exibe os cursos disponíveis (Python, JavaScript, PHP, Ruby, C#, Java).  
 - Cada card leva à página da linguagem correspondente.  
 - Efeitos de *hover* e *scale* para interatividade moderna.
 
-### 📚 Páginas de Curso
+### Páginas de Curso
 - Explicação sobre a linguagem e seu papel no mercado.  
 - Lista de tópicos abordados no curso.  
 - Botões para **quiz interativo** e **compra do curso**.
 
-### 🧠 Quiz Interativo
+### Quiz Interativo
 - Cada linguagem possui seu próprio quiz com pontuação.  
 - Feedback instantâneo de acertos e erros.  
 - Implementado totalmente em **JavaScript**.
 
-### 💳 Página de Compra (`compra.html`)
+### Página de Compra (`compra.html`)
 - Simulação de checkout com formulário.  
 - Campos de nome, email e forma de pagamento.  
 - Confirmação visual e redirecionamento.
 
-### 💼 Portfólio (`portfolio.html`)
+### Portfólio (`portfolio.html`)
 - Exibe os projetos desenvolvidos pela equipe.  
 - Destaque para o **projeto Vinheria Agnello** — e-commerce de vinhos com design e estrutura criados pela Code On.
 
-### 👥 Sobre Nós (`sobre.html`)
+### Sobre Nós (`sobre.html`)
 - Missão e propósito da plataforma.  
 - Apresentação dos integrantes da equipe e suas funções.
 
 ---
 
-## 🧩 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Função |
 |-------------|--------|
@@ -113,7 +113,7 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 
 ---
 
-## 🎨 Identidade Visual
+## Identidade Visual
 
 - **Paleta de Cores:** tons de azul-escuro e verde neon (tecnologia e modernidade).  
 - **Tipografia:** fonte “Poppins”, sem serifa, legível e fluida.  
@@ -122,7 +122,7 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 
 ---
 
-## 🧭 Formulários e Navegação
+## Formulários e Navegação
 
 - Campos e botões padronizados com foco visível.  
 - Feedback visual em interações.  
@@ -130,7 +130,7 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 
 ---
 
-## 👨‍💻 Integrantes
+## Integrantes
 
 - **Cesár André Zanin Filho** — RM: 567615  
 - **Felipe Silva Santos Menezes** — RM: 566607  
@@ -138,7 +138,7 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 
 ---
 
-## 🚀 Como Executar Localmente
+## Como Executar Localmente
 
 ```bash
 git clone https://github.com/CP-2-Web-Development/Web-Development-CP2.git
