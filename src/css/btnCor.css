@@ -5,16 +5,16 @@ header {
   padding: 15px 40px;
 }
 
-/* alinha tudo no header */
+
 header nav {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: flex-end; /* joga menu e botões pra direita */
+  justify-content: flex-end; 
   gap: 20px;
 }
 
-/* garante que a lista fique colada à esquerda dentro do nav */
+
 header nav ul {
   display: flex;
   align-items: center;
@@ -22,10 +22,10 @@ header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: auto; /* empurra os botões pro lado oposto */
+  margin-right: auto;
 }
 
-/* alinha os botões e o toggle lado a lado */
+
 .modo-tema,
 .btn-trocaCor {
   display: flex;
@@ -33,12 +33,10 @@ header nav ul {
   gap: 10px;
 }
 
-/* se quiser um pequeno espaço entre o toggle e o botão Daltonismo */
 .btn-trocaCor {
   margin-left: 10px;
 }
 
-/* mantém o mesmo estilo de botão */
 button {
   background-color: #112240;
   color: #fff;

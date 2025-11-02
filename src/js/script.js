@@ -38,6 +38,9 @@ if (btnDaltonismo) {
     }
   });
 }
+
+
+// swal alert exibe uma mensagem bonitinha na tela, a documentacao tá em https://sweetalert2.github.io/
 // --- Alerta bonito ---
 function alertaBonito(event) {
   event.preventDefault(); // impede recarregamento do formulário

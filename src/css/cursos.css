@@ -1,16 +1,15 @@
 @import url("./style.css");
 
-
 main {
   background: linear-gradient(135deg, #f0f2ff 0%, #dcdcff 100%);
   color: #111;
-  font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 40px 10%;
 }
 
-.dark-mode h1 {
-  color: #00bfff;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -19,16 +18,10 @@ h2 {
   color: #222;
   font-weight: 600;
 }
-
-.dark-mode h2 {
-  color: #00bfff;
-}
-
 ul {
   text-align: left;
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px 0 40px;
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -36,7 +29,6 @@ ul {
 ul li {
   margin: 10px 0;
 }
-
 
 p {
   max-width: 900px;
@@ -46,10 +38,28 @@ p {
   color: #333;
 }
 
-.dark-mode p {
-  color: #d0d0d0;
+.btn,
+.botoes a,
+.botoes button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #112240;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover,
+.botoes a:hover,
+.botoes button:hover {
+  background-color: #0099cc;
+  transform: scale(1.05);
+}
 
 .botoes {
   margin-top: 40px;
@@ -58,48 +68,46 @@ p {
   gap: 20px;
 }
 
-.botoes a,
-.botoes button {
-  text-decoration: none;
-  background-color: #0a192f;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.3s ease;
+
+.dark-mode main {
+  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+  color: #e0e0e0;
 }
 
-.btn {
-  display: block;
-  margin: 30px auto 0 auto;
-  text-align: center;
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #112240;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: background 0.3s, transform 0.3s;
+.dark-mode h1,
+.dark-mode h2 {
+  color: #00bfff;
 }
 
-.btn:hover {
-  background-color: #112240;
-  transform: scale(1.05);
+.dark-mode p,
+.dark-mode ul li {
+  color: #d0d0d0;
 }
 
+.dark-mode .btn,
 .dark-mode .botoes a,
 .dark-mode .botoes button {
-  background-color: #0a192f;
-  color: #fff;
+  background-color: #005fcc;
 }
 
+.dark-mode .btn:hover,
 .dark-mode .botoes a:hover,
 .dark-mode .botoes button:hover {
-  background-color: #005fcc;
+  background-color: #00bfff;
+  color: #000;
+  transform: scale(1.08);
+}
+
+
+.high-contrast-mode main {
+  background: #000 !important;
+  color: #ffff00 !important;
+}
+
+.high-contrast-mode .btn,
+.high-contrast-mode .botoes a,
+.high-contrast-mode .botoes button {
+  background-color: #000 !important;
+  color: #ff0 !important;
+  border: 2px solid #ff0;
 }
