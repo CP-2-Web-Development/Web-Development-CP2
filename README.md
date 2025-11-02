@@ -60,7 +60,9 @@ O projeto tem como objetivo exercitar a criação de páginas interativas, organ
 │       ├── contato.html
 │       └── compra.html
 │
-└── index.html
+├── membros.txt
+├── index.html
+└── readme.md
 ```
 
 ---
