@@ -1,7 +1,7 @@
 
 let imagens = [
   "src/assets/inicio/python_inicio.png",
-  "src/assets/inicio/java_inicio.jpg",
+  "src/assets/inicio/Java_inicio.jpg",
   "src/assets/inicio/ruby_inicio.png",
   "src/assets/inicio/csharp_inicio.png",
   "src/assets/inicio/javascript_inicio.png",
