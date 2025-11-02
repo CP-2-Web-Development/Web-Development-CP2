@@ -1,6 +1,4 @@
 
-
-// Array de imagens
 let imagens = [
   "src/assets/inicio/python_inicio.png",
   "src/assets/inicio/java_inicio.jpg",
@@ -13,9 +11,9 @@ let imagens = [
 let links = [
   "./src/pages/paginasPy/py.html",
   "./src/pages/paginasjava/java.html",
-  "./src/pages/paginasRuby/ruby.html",
+  "./src/pages/paginasRuby/quizRuby.html",
   "./src/pages/csharp/csharp.html",
-  "./src/pages/paginasjs/js.html",
+  "./src/pages/paginasjs/quizJs.html",
   "./src/pages/paginasPhp/php.html",
 ];
 

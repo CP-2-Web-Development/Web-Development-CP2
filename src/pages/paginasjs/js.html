@@ -9,29 +9,62 @@
   
 </head>
 
-<body>
-  <header>
+<body><header>
+    <h1>CodeOn</h1>
     <nav>
       <ul>
         <li><a href="../../../index.html">Home</a></li>
         <li><a href="../sobre.html">Sobre</a></li>
         <li><a href="../portifolio.html">Portfólio</a></li>
         <li><a href="../market_place.html">Market Place</a></li>
-        <li><a href="../quiz.html">Quiz</a></li>
         <li><a href="../contato.html">Contato</a></li>
       </ul>
 
-      <div class="modo-tema">
-        <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
-        <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
-        <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+      <div class="btn-trocaCor">
+        <div class="atual-container">
+          <input type="checkbox" id="modo-atual">
+          <label for="modo-atual" class="atual-label">
+            <span class="icone-sol">☀️</span>
+            <span class="icone-lua">🌙</span>
+          </label>
+        </div>
+
+        <button class="btn-contraste" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+        <button id="btn-daltonismo" class="btn-dalt" title="Filtro Daltonismo">🎨 Monocromático</button>
       </div>
     </nav>
   </header>
 
   <main>
     <h1>Quiz de JavaScript</h1>
-    <a href="./perguntasJs.html"><button>Iniciar Quiz de JavaScript</button></a>
+    <main>
+  <h1>JavaScript</h1>
+
+  <h2>Por que aprender JavaScript?</h2>
+  <ul>
+    <li>É a linguagem que dá vida às páginas da web — interatividade, animações e muito mais.</li>
+    <li>Usada por todas as grandes empresas de tecnologia, de Google a Netflix.</li>
+    <li>Permite criar sites, aplicativos e até servidores com Node.js.</li>
+    <li>Tem uma das maiores comunidades do mundo e um ecossistema em constante evolução.</li>
+  </ul>
+
+  <h2>O que você vai aprender neste curso:</h2>
+  <p>
+    Este curso vai te ensinar os fundamentos do JavaScript moderno — variáveis, funções, DOM, eventos, APIs
+    e muito mais. Você vai entender como transformar páginas estáticas em experiências dinâmicas e interativas,
+    criando soluções reais para o mundo digital.
+  </p>
+
+  <p>
+    Preparado para dominar a linguagem que movimenta a web?
+    Teste seus conhecimentos agora no nosso quiz de JavaScript! 🚀
+  </p>
+
+
+    <a href="./perguntasJs.html" class="btn">🎯 Iniciar Quiz de JavaScript</a>
+    <a href="../comprar.html"><button class="btn">Comprar</button></a>
+
+
   </main>
 
   <footer>

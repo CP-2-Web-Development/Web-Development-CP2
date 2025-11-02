@@ -1,25 +1,49 @@
-//FUNÇÃO TROCAR
 function trocar(modo) {
-  // Remove todas as classes antes de adicionar a nova
+  // Remove todos os estilos anteriores
   document.body.classList.remove('dark-mode', 'high-contrast-mode');
 
+  // Aplica o modo selecionado
   if (modo === 'escuro') {
     document.body.classList.add('dark-mode');
-    localStorage.setItem('modo', 'escuro');
   } else if (modo === 'contraste') {
     document.body.classList.add('high-contrast-mode');
-    localStorage.setItem('modo', 'contraste');
-  } else {
-    localStorage.setItem('modo', 'claro');
+  } else if (modo === 'daltonismo') {
+    document.body.classList.add('daltonismo');
+    atualizaTexto();
+    
   }
+
 }
 
-window.onload = function () {
-  const temaSalvo = localStorage.getItem('modo');
-  if (temaSalvo === 'escuro') {
-    document.body.classList.add('dark-mode');
-  } else if (temaSalvo === 'contraste') {
-    document.body.classList.add('high-contrast-mode');
-  }
-};
-
+const atual = document.getElementById('modo-atual');
+if (atual) {
+  atual.addEventListener('change', function() {
+    if (atual.checked === true) {
+      trocar('escuro');
+    } else {
+      trocar('claro');
+    }
+  });
+}
+const btnDaltonismo = document.getElementById('btn-daltonismo');
+if (btnDaltonismo) {
+  btnDaltonismo.addEventListener('click', () => {
+    // alterna o estado manualmente
+    if (document.body.classList.contains('daltonismo')) {
+      document.body.classList.remove('daltonismo');
+      btnDaltonismo.textContent = '🎨 Filtro Desativado';
+    } else {
+      document.body.classList.add('daltonismo');
+      btnDaltonismo.textContent = '🎨 Filtro Ativo';
+    }
+  });
+}
+// --- Alerta bonito ---
+function alertaBonito(event) {
+  event.preventDefault(); // impede recarregamento do formulário
+  Swal.fire({
+    title: "Sua ação foi concluída com sucesso!",
+    icon: "success",
+    draggable: true //deixa o mouse arrastável ou n
+  });
+}

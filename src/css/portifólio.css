@@ -1,1 +1,152 @@
 @import url('../css/style.css');
+
+
+
+
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro h2 {
+  font-size: 2.2rem;
+  color: #112240;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.dark-mode .intro p {
+  color: #e0e0e0;
+}
+
+/* ======== PROJETO PRINCIPAL ======== */
+.projeto {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  transition: 0.4s;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+}
+
+.dark-mode .projeto {
+  background-color: #112240;
+  color: #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+}
+
+.projeto h3 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.dark-mode .projeto h3 {
+  color: #112240;
+}
+
+.projeto p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.projeto ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projeto ul li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.projeto .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #112240;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.projeto .btn:hover {
+  background-color: #112240;
+  transform: scale(1.05);
+}
+
+
+.outros-projetos {
+  text-align: center;
+}
+
+.outros-projetos h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #112240;
+}
+
+.outros-projetos p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.dark-mode .outros-projetos p {
+  color: #ccc;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 280px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode .card {
+  background-color: #0b1b30;
+  color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 191, 255, 0.15);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 123, 255, 0.2);
+}
+
+.card h4 {
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.dark-mode .card h4 {
+  color: #00bfff;
+}
+

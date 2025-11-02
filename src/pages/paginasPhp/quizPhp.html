@@ -7,30 +7,31 @@
     <title>Quiz</title>
 </head>
 <body>
-    <header>
-        <h2>PHP</h2>
-        <nav>
-            <ul>
-                <li><a href="../../../../../index.html">Home</a></li>
-                <li><a href="../sobre.html">Sobre</a></li>
-                <li><a href="../portifólio.html">Portifólio</a></li>
-                <li><a href="../market_place.html">Market Place</a></li>
-                <li><a href="../quiz.html">Quiz</a></li>
-                <li><a href="../contato.html">Contato</a></li>
-                <div>
-                   <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
-                   <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
-                   <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
-                </div>
-            </ul>
-        </nav>
-        <main>
-    <div class="resultado">
-        <div id="msg"></div>
-    </div>
-    
-</main>
-    </header>
+     <header>
+    <h1>CodeOn</h1>
+    <nav>
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../sobre.html">Sobre</a></li>
+        <li><a href="../portifolio.html">Portfólio</a></li>
+        <li><a href="../market_place.html">Market Place</a></li>
+        <li><a href="../contato.html">Contato</a></li>
+      </ul>
+
+      <div class="btn-trocaCor">
+        <div class="atual-container">
+          <input type="checkbox" id="modo-atual">
+          <label for="modo-atual" class="atual-label">
+            <span class="icone-sol">☀️</span>
+            <span class="icone-lua">🌙</span>
+          </label>
+        </div>
+
+        <button class="btn-contraste" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+        <button id="btn-daltonismo" class="btn-dalt" title="Filtro Daltonismo">🎨 Monocromático</button>
+      </div>
+    </nav>
+  </header>
 <a href="./perguntasphp.html"><button onclick="">iniciar quizz</button></a>
     <script src="../js/quiz.js"></script>
 

@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portifólio.css">
     <title>Portifólio</title>
 </head>
 <body>
    </head>
 <body>
-    <header>
+
+  <header>
         <nav>
             <ul>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
                 <li><a href="./portifolio.html">Portfólio</a></li>
                 <li><a href="./market_place.html">Market Place</a></li>
-                <li><a href="./quiz.html">Quiz</a></li>
                 <li><a href="./contato.html">Contato</a></li>
-                <div>
-                   <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
-                   <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
-                   <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
-                </div>
+                <div class="btn-trocaCor">
+  <div class="atual-container">
+    <input type="checkbox" id="modo-atual">
+    <label for="modo-atual" class="atual-label">
+      <span class="icone-sol">☀️</span>
+      <span class="icone-lua">🌙</span>
+    </label>
+  </div>
+
+  <button class="btn-contraste" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+  <button id="btn-daltonismo" class="btn-dalt" title="Filtro Daltonismo">🎨 Daltonismo</button>
+</div>
             </ul>
         </nav>
     </header>
     <main>
     <section class="intro">
       <h2>Projetos que Transformam Negócios</h2>
-      <p>Na <strong>TechNova</strong>, acreditamos que a tecnologia é uma ferramenta poderosa para inovação e crescimento.  
+      <p>Na <strong>CodeOn</strong>, acreditamos que a tecnologia é uma ferramenta poderosa para inovação e crescimento.  
       Abaixo você confere um dos nossos projetos de destaque.</p>
     </section>
 
@@ -96,7 +103,7 @@
       </div>
     </div>
   </div>
-
+<script src="../js/script.js"></script>
   <div class="footer-bottom">
     <p>&copy; Code On | Todos os direitos reservados</p>
   </div>

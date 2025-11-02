@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/cursos.css">
-    <title>Python</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Python</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/cursos.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../sobre.html">Sobre</a></li>
-                <li><a href="../portifolio.html">Portfólio</a></li>
-                <li><a href="../market_place.html">Market Place</a></li>
-                <li><a href="../quiz.html">Quiz</a></li>
-                <li><a href="../contato.html">Contato</a></li>
-                <div>
-                   <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
-                   <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
-                   <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
-                </div>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>CodeOn</h1>
+    <nav>
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../sobre.html">Sobre</a></li>
+        <li><a href="../portifolio.html">Portfólio</a></li>
+        <li><a href="../market_place.html">Market Place</a></li>
+        <li><a href="../contato.html">Contato</a></li>
+      </ul>
+      <div class="btn-trocaCor">
+  <div class="atual-container">
+    <input type="checkbox" id="modo-atual">
+    <label for="modo-atual" class="atual-label">
+      <span class="icone-sol">☀️</span>
+      <span class="icone-lua">🌙</span>
+    </label>
+  </div>
+
+  <button class="btn-contraste" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+  <button id="btn-daltonismo" class="btn-dalt" title="Filtro Daltonismo">🎨 Monocromatico</button>
+</div>
+    </nav>
+  </header>
+
+  <main>
     <h1>Python</h1>
-    <a href="./perguntasPy.html"><button>Iniciar Quiz de Python</button></a>
 
     <h2>Por que aprender Python?</h2>
     <ul>
-        <li>É uma das linguagens de programação mais populares e em alta demanda no mercado de trabalho.</li>
-        <li>Possui uma vasta biblioteca padrão e uma comunidade ativa que contribui com inúmeros pacotes e frameworks.</li>
-        <li>É utilizada por grandes empresas como Google, Facebook, Instagram e Netflix.</li>
-        <li>Facilita o desenvolvimento rápido de protótipos e soluções eficientes.</li>
+      <li>É uma das linguagens de programação mais populares e em alta demanda no mercado de trabalho.</li>
+      <li>Possui uma vasta biblioteca padrão e uma comunidade ativa que contribui com inúmeros pacotes e frameworks.</li>
+      <li>É utilizada por grandes empresas como Google, Facebook, Instagram e Netflix.</li>
+      <li>Facilita o desenvolvimento rápido de protótipos e soluções eficientes.</li>
     </ul>
 
     <h2>O que você vai aprender neste curso:</h2>
     <p>
-                Nosso curso de Python vai te ensinar desde os conceitos básicos até projetos práticos. 
-                Você aprenderá sintaxe, estruturas de dados, manipulação de arquivos, 
-                desenvolvimento web e muito mais — sempre com exemplos aplicados ao mundo real.
-            </p>
-      <p>disposto a mergulhar no novo mundo das Automacoes, Machine Learning e Data Science? teste seus conhecimentos no Quizz! </p>
+      Nosso curso de Python vai te ensinar desde os conceitos básicos até projetos práticos.
+      Você aprenderá sintaxe, estruturas de dados, manipulação de arquivos,
+      desenvolvimento web e muito mais — sempre com exemplos aplicados ao mundo real.
+    </p>
 
-      <div class="botoes">
-                <a href="./perguntasPy.html" class="botao-quiz">🎯 Iniciar Quiz de Python</a>
-                <a href="../comprar.html"><button>Comprar</button></a>
-            </div>
+    <p>
+      Pronto para mergulhar no mundo das automações, machine learning e data science?
+      Teste seus conhecimentos no quiz!
+    </p>
 
-    <footer>
+    
+      <a href="./perguntasPy.html" class="btn">Iniciar Quiz de Python</a>
+      <a href="../comprar.html" class="btn">Comprar</a>
+    
+  </main>
+
+  <footer>
   <div class="footer-container">
 
     <div class="footer-section">
@@ -74,11 +88,9 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; Code On | Todos os direitos reservados</p>
+    <p>&copy; FIAP | Todos os direitos reservados</p>
   </div>
 </footer>
 
-    <script src="../../js/script.js"></script>
-    <script src="../../js/quizJs.js"></script>
 </body>
 </html>

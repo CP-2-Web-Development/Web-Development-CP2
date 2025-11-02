@@ -1,66 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/cursos.css">
-    <title>Csharp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/cursos.css">
+  <title>C#</title>
 </head>
+
 <body>
-  
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../../../index.html">Home</a></li>
-                <li><a href="../sobre.html">Sobre</a></li>
-                <li><a href="../portifolio.html">Portfólio</a></li>
-                <li><a href="../market_place.html">Market Place</a></li>
-                <li><a href="../quiz.html">Quiz</a></li>
-                <li><a href="../contato.html">Contato</a></li>
-              </ul>
-              <div>
-                 <button style="background-color: #f4f4f4;" title="Modo Claro" onclick="trocar('claro')">☀️</button>
-                 <button style="background-color: #0a192f;" title="Modo Escuro" onclick="trocar('escuro')">🌙</button>
-                 <button style="background-color: #000000;" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
-              </div>
-        </nav>
-    </header>
+  <header>
+    <h1>CodeOn</h1>
+    <nav>
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../sobre.html">Sobre</a></li>
+        <li><a href="../portifolio.html">Portfólio</a></li>
+        <li><a href="../market_place.html">Market Place</a></li>
+        <li><a href="../contato.html">Contato</a></li>
+      </ul>
 
-    <main>
+      <div class="btn-trocaCor">
+        <div class="atual-container">
+          <input type="checkbox" id="modo-atual">
+          <label for="modo-atual" class="atual-label">
+            <span class="icone-sol">☀️</span>
+            <span class="icone-lua">🌙</span>
+          </label>
+        </div>
+
+        <button class="btn-contraste" title="Modo Contraste" onclick="trocar('contraste')">👁️</button>
+        <button id="btn-daltonismo" class="btn-dalt" title="Filtro Daltonismo">🎨 Monocromático</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
     <h1>C#</h1>
-    <a href="./perguntasC.html"><button>Iniciar Quiz de C#</button></a>
-    <p>se interessou pela linguagem? Clique no botão de comprar e vire desenvolvedor!</p>
-    <a href="../comprar.html"><button>Comprar</button></a>
-    <footer>
-  <div class="footer-container">
 
-    <div class="footer-section">
-      <h3>Code On</h3>
-      <p>Um portal voltado para inovação, tecnologia e o futuro digital. 🚀</p>
-    </div>
+    <h2>O que é C#?</h2>
+    <p>
+      C# (lê-se "C Sharp") é uma linguagem de programação moderna, orientada a objetos, desenvolvida pela Microsoft como parte da plataforma .NET.
+      Ela combina a eficiência do C++ com a simplicidade do Visual Basic, sendo usada tanto para desenvolvimento web quanto para aplicações desktop e mobile.
+    </p>
 
-    <div class="footer-section">
-      <h3>Informações</h3>
-      <p><strong>Email:</strong> atendimento@fiap.com.br</p>
-      <p><strong>Telefone:</strong> (11) 3385-8010</p>
-    </div>
+    <h2>Por que aprender C#?</h2>
+    <ul>
+      <li>É amplamente utilizada no desenvolvimento de jogos com Unity.</li>
+      <li>Permite criar aplicações para Windows, web e dispositivos móveis.</li>
+      <li>Tem sintaxe clara e poderosa, ideal para quem vem de linguagens como Java ou C++.</li>
+      <li>É fortemente tipada e possui uma vasta biblioteca padrão.</li>
+    </ul>
 
-    <div class="footer-section">
-      <h3>Nos siga no Instagram</h3>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/mnzsfp_/" target="_blank"><i class="fab fa-instagram"></i> mnzsfp_</a><br>
-        <a href="https://www.instagram.com/ceszanin/" target="_blank"><i class="fab fa-instagram"></i> ceszanin</a><br>
-        <a href="https://www.instagram.com/vinicius_kozonoe/" target="_blank"><i class="fab fa-instagram"></i> vinicius_kozonoe</a>
+    <h2>O que você vai aprender neste curso:</h2>
+    <p>
+      Neste curso de C#, você aprenderá os fundamentos da linguagem, estruturas condicionais e de repetição, 
+      programação orientada a objetos, manipulação de arquivos, e integração com banco de dados. 
+      Também verá como desenvolver aplicações gráficas e web com o framework .NET.
+    </p>
+
+    <p>Preparado para mergulhar no mundo do .NET e criar soluções poderosas? Teste seus conhecimentos no Quiz de C#!</p>
+
+    <a href="./perguntasC.html"><button class="btn">Iniciar Quiz de C#</button></a>
+    <a href="../comprar.html"><button class="btn">Comprar</button></a>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Code On</h3>
+        <p>Um portal voltado para inovação, tecnologia e o futuro digital. 🚀</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Informações</h3>
+        <p><strong>Email:</strong> atendimento@fiap.com.br</p>
+        <p><strong>Telefone:</strong> (11) 3385-8010</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Nos siga no Instagram</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mnzsfp_/" target="_blank"><i class="fab fa-instagram"></i> mnzsfp_</a><br>
+          <a href="https://www.instagram.com/ceszanin/" target="_blank"><i class="fab fa-instagram"></i> ceszanin</a><br>
+          <a href="https://www.instagram.com/vinicius_kozonoe/" target="_blank"><i class="fab fa-instagram"></i> vinicius_kozonoe</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>&copy; Code On | Todos os direitos reservados</p>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>&copy; Code On | Todos os direitos reservados</p>
+    </div>
+  </footer>
 
-    <script src="../../js/script.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/quizJs.js"></script>
 </body>
 </html>

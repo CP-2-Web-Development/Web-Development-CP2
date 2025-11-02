@@ -1,5 +1,6 @@
 @import url(./carrosel.css);
-
+@import url("./btnCor.css");
+@import url("./footer.css");
 body {
   margin: 0;
   padding: 0;
@@ -72,62 +73,6 @@ header nav ul li a:hover {
   box-shadow: 0 0 10px #00bfff;
 }
 
-footer {
-  background-color: #112240;
-  color: #e0e0e0;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: auto;
-  transition: 0.4s;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-  margin: 10px;
-}
-
-.footer-section h3 {
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.social-icons a {
-  color: #00bfff;
-  font-size: 18px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 0;
-  transition: 0.3s;
-}
-
-.social-icons a i {
-  margin-right: 6px;
-}
-
-.social-icons a:hover {
-  color: #fff;
-  transform: scale(1.1);
-}
-
-.footer-bottom {
-  border-top: 1px solid #00bfff;
-  padding-top: 10px;
-  font-size: 14px;
-  color: #aaa;
-}
 .high-contrast-mode {
   background-color: #000000 !important;
   color: #ffff00 !important;
@@ -176,4 +121,80 @@ footer {
 }
 
 
+.atual-container {
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
 
+.atual-container input {
+  display: none;
+}
+
+.atual-label {
+  position: absolute;
+  cursor: pointer;
+  background-color: #111;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.atual-label .icone-sol {
+  color: #ffa500;
+  font-size: 1rem;
+}
+
+.atual-label .icone-lua {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.atual-label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+#modo-atual:checked + .atual-label {
+  background-color: #ffa500;
+}
+
+#modo-atual:checked + .atual-label::after {
+  transform: translateX(30px);
+}
+
+
+.daltonismo {
+  filter: saturate(150%) contrast(110%) hue-rotate(-20deg);
+}
+
+.high-contrast-mode.daltonismo {
+  filter: contrast(200%) saturate(180%) hue-rotate(-30deg);
+}
+.btn-trocaCor {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+  margin-top: 10px;
+}
+
+body.daltonismo,
+body.daltonismo * {
+  /* filtra tudo que tá na tela  */
+  filter: grayscale(100%) !important; 
+  transition: filter 0.4s ease;
+}
