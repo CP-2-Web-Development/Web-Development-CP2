@@ -61,7 +61,7 @@ p {
 .botoes a,
 .botoes button {
   text-decoration: none;
-  background-color: #00bfff;
+  background-color: #0a192f;
   color: white;
   border: none;
   border-radius: 12px;
@@ -95,7 +95,7 @@ p {
 
 .dark-mode .botoes a,
 .dark-mode .botoes button {
-  background-color: #007bff;
+  background-color: #0a192f;
   color: #fff;
 }
 
