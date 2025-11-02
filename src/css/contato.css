@@ -8,7 +8,6 @@
   padding: 40px;
 }
 
-/* Mapa fixo à esquerda */
 .mapa {
   flex: 1;
   min-width: 400px;
@@ -18,7 +17,6 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Formulário à direita */
 .formulario {
   flex: 1;
   min-width: 350px;
@@ -79,20 +77,6 @@
 .form-contato button:hover {
   background-color: #008ccc;
 }
-
-/* ============================
-   RESPONSIVIDADE
-============================ */
-@media (max-width: 900px) {
-  .contato-container {
-    flex-direction: column;
-  }
-  .mapa, .formulario {
-    width: 100%;
-    height: auto;
-  }
-}
-
 
 .dark-mode .formulario {
   background-color: #112240;

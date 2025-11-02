@@ -1,6 +1,4 @@
-@import url('../css/style.css');
-
-
+@import url("./style.css");
 .sobre-container {
   max-width: 1000px;
   margin: 60px auto;
@@ -10,7 +8,7 @@
 
 .sobre-container h2 {
   font-size: 2em;
-  color: #000000;
+  color: #000;
   margin-bottom: 20px;
 }
 
@@ -19,7 +17,6 @@
   line-height: 1.8;
   margin-bottom: 40px;
 }
-
 
 .missao-visao {
   display: flex;
@@ -41,8 +38,9 @@
   color: #64ffda;
   margin-bottom: 10px;
 }
-.card-info p{
-  color: #eaeaea;
+
+.card-info p {
+  color: #64ffda;
 }
 
 .membros {
@@ -60,9 +58,6 @@
   padding: 15px;
   box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
 }
-.membro p, .tecnologias li, .card-info p{
-    color: #64ffda;
-}
 
 .membro img {
   width: 100%;
@@ -74,6 +69,10 @@
   margin-top: 10px;
 }
 
+.membro p {
+  color: #64ffda;
+}
+
 .tecnologias ul {
   list-style: none;
   margin-top: 15px;
@@ -81,6 +80,7 @@
 
 .tecnologias li {
   background: #112240;
+  color: #64ffda;
   margin: 8px auto;
   width: 200px;
   padding: 8px;
@@ -90,12 +90,12 @@
 .frase-final {
   margin-top: 40px;
   font-style: italic;
-  color: #000000;
+  color: #000;
 }
 
 footer {
   background: #112240;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 30px 10px;
   margin-top: 50px;
@@ -113,6 +113,7 @@ footer {
   margin-bottom: 10px;
 }
 
+/* --- Tema Claro --- */
 body.claro {
   background-color: #f4f4f4;
   color: #000;

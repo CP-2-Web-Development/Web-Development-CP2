@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz de PHP</title>
+
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/perguntas.css">
+  <link rel="stylesheet" href="../../css/cursos.css">
+  
+  <title>PHP</title>
 </head>
 <body>
 
- <header>
+  <header>
     <h1>CodeOn</h1>
     <nav>
       <ul>
@@ -35,53 +37,36 @@
     </nav>
   </header>
 
-  <h1>Quiz sobre PHP</h1>
+  <main>
+    <h1>PHP</h1>
 
-  <form id="quiz-form">
-    <div>
-      <p>1. O que é PHP?</p>
-      <label><input type="radio" name="q1" value="a"> A) Uma linguagem de marcação<br></label>
-      <label><input type="radio" name="q1" value="b"> B) Uma linguagem de programação voltada para o desenvolvimento web<br></label>
-      <label><input type="radio" name="q1" value="c"> C) Um sistema operacional<br></label>
-    </div>
+    <h2>Por que aprender PHP?</h2>
+    <ul>
+      <li>É uma das linguagens mais utilizadas para desenvolvimento web, especialmente em sites dinâmicos.</li>
+      <li>Possui ampla compatibilidade com bancos de dados e servidores, como MySQL e Apache.</li>
+      <li>É a base de plataformas populares como WordPress, Drupal e Laravel.</li>
+      <li>Permite criar aplicações robustas e seguras com alta performance no backend.</li>
+    </ul>
 
-    <div>
-      <p>2. O que significa a sigla PHP?</p>
-      <label><input type="radio" name="q2" value="a"> A) Personal Home Page<br></label>
-      <label><input type="radio" name="q2" value="b"> B) PHP: Hypertext Preprocessor<br></label>
-      <label><input type="radio" name="q2" value="c"> C) Page Hosting Program<br></label>
-    </div>
+    <h2>O que você vai aprender neste curso:</h2>
+    <p>
+      Nosso curso de PHP vai te guiar desde os fundamentos até a criação de sistemas completos.
+      Você aprenderá a manipular formulários, interagir com bancos de dados,
+      trabalhar com sessões e cookies, e integrar PHP com HTML e CSS.
+    </p>
 
-    <div>
-      <p>3. Qual é a extensão padrão dos arquivos PHP?</p>
-      <label><input type="radio" name="q3" value="a"> A) .ph<br></label>
-      <label><input type="radio" name="q3" value="b"> B) .php<br></label>
-      <label><input type="radio" name="q3" value="c"> C) .html<br></label>
-    </div>
+    <p>
+      Pronto para colocar a mão no código e dominar o backend?
+      Teste seus conhecimentos no quiz abaixo!
+    </p>
 
-    <div>
-      <p>4. Como se inicia um bloco de código PHP dentro de um arquivo HTML?</p>
-      <label><input type="radio" name="q4" value="a"> A) &lt;% %&gt;<br></label>
-      <label><input type="radio" name="q4" value="b"> B) &lt;?php ?&gt;<br></label>
-      <label><input type="radio" name="q4" value="c"> C) &lt;php&gt;&lt;/php&gt;<br></label>
-    </div>
-
-    <div>
-      <p>5. Qual função é usada para exibir texto na tela em PHP?</p>
-      <label><input type="radio" name="q5" value="a"> A) echo<br></label>
-      <label><input type="radio" name="q5" value="b"> B) print_text<br></label>
-      <label><input type="radio" name="q5" value="c"> C) show()<br></label>
-    </div>
-
-    <button type="button" onclick="verificarRespostas()">Enviar Respostas</button>
-  </form>
-
-  <button type="button" onclick="resetarQuiz()">Reiniciar Quiz</button>
-
-  <script src="../../js/quizPHP.js"></script>
+    <a href="./perguntasphp.html" class="btn">Iniciar Quiz de PHP</a>
+    <a href="../comprar.html" class="btn">Comprar</a>
+  </main>
 
   <footer>
     <div class="footer-container">
+
       <div class="footer-section">
         <h3>Code On</h3>
         <p>Um portal voltado para inovação, tecnologia e o futuro digital. 🚀</p>
@@ -104,11 +89,11 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; Code On | Todos os direitos reservados</p>
+      <p>&copy; FIAP | Todos os direitos reservados</p>
     </div>
   </footer>
 
   <script src="../../js/script.js"></script>
-  <script src="../../js/quizPHP.js"></script>
+  <script src="../../js/quizJs.js"></script>
 </body>
 </html>
